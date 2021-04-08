@@ -1,4 +1,10 @@
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Infrastructure.Data;
+using Core.Entities;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers
 {
@@ -6,17 +12,45 @@ namespace API.Controllers
     [Route("api/[controller]")]
     public class ProductsController : ControllerBase
     {
+        private readonly StoreContext _context;
+        public ProductsController(StoreContext context)
+        {
+            _context = context;
+        }
+
         [HttpGet]
 
-        public string GetProducts()
+        
+/*
+
+                // synchronous request
+                // our request is gonna been blocked until the request to sql is finnished
+        
+        public ActionResult<List<Product>> GetProducts()
         {
-            return "this will be a list of products";
+                //gets our list of products
+                //this is gonna execute a select query on our DB and return the result in the variable 'products'
+            
+            var products = _context.Products.ToList(); 
+            
+                return Ok(products);
+        }
+
+*/
+
+        [HttpGet("GetAll")]
+        // asynchronous request
+        public async Task<ActionResult<List<Product>>> GetProducts()
+        {
+            //gets our list of products
+            var products = await _context.Products.ToListAsync(); 
+            return Ok(products);
         }
 
         [HttpGet("{id}")]
-        public string GetProduct(int id) //folosim 'int id' ca sa obtinem un singur produs
+        public async  Task<ActionResult<Product>> GetProduct(int id) //folosim 'int id' ca sa obtinem un singur produs
         {
-            return "single product";
+            return await _context.Products.FindAsync(id);
         }
     }
 }
