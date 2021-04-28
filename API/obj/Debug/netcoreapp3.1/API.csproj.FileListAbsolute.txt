@@ -63,3 +63,5 @@ C:\Users\preda\10library\API\obj\Debug\netcoreapp3.1\staticwebassets\API.StaticW
 C:\Users\preda\10library\API\obj\Debug\netcoreapp3.1\API.dll
 C:\Users\preda\10library\API\obj\Debug\netcoreapp3.1\API.pdb
 C:\Users\preda\10library\API\obj\Debug\netcoreapp3.1\API.genruntimeconfig.cache
+C:\Users\preda\10library\API\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\preda\10library\API\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
