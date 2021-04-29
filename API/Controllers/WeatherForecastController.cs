@@ -10,6 +10,7 @@ namespace API.Controllers
     //Atribute - ne indica niste abilitati
     [ApiController] 
     [Route("[controller]")] // Route - specifica cum un client este capabil sa trimita un request catre controller-ul nostru
+    [ApiExplorerSettings(IgnoreApi = true)]
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
