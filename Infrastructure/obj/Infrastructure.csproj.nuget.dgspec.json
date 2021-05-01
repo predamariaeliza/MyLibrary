@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\preda\\10library\\Infrastructure\\Infrastructure.csproj": {}
+    "c:\\Users\\preda\\10library\\Infrastructure\\Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\preda\\10library\\Core\\Core.csproj": {
+    "c:\\Users\\preda\\10library\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\preda\\10library\\Core\\Core.csproj",
+        "projectUniqueName": "c:\\Users\\preda\\10library\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\preda\\10library\\Core\\Core.csproj",
+        "projectPath": "c:\\Users\\preda\\10library\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\preda\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\preda\\10library\\Core\\obj\\",
+        "outputPath": "c:\\Users\\preda\\10library\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -63,14 +63,14 @@
         }
       }
     },
-    "C:\\Users\\preda\\10library\\Infrastructure\\Infrastructure.csproj": {
+    "c:\\Users\\preda\\10library\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\preda\\10library\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "c:\\Users\\preda\\10library\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\preda\\10library\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "c:\\Users\\preda\\10library\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\preda\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\preda\\10library\\Infrastructure\\obj\\",
+        "outputPath": "c:\\Users\\preda\\10library\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -90,8 +90,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\preda\\10library\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\preda\\10library\\Core\\Core.csproj"
+              "c:\\Users\\preda\\10library\\Core\\Core.csproj": {
+                "projectPath": "c:\\Users\\preda\\10library\\Core\\Core.csproj"
               }
             }
           }
@@ -118,6 +118,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.0.601, )"
             }
           },
           "imports": [

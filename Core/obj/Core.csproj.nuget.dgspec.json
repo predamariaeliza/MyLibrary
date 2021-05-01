@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\preda\\10library\\Core\\Core.csproj": {}
+    "c:\\Users\\preda\\10library\\Core\\Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\preda\\10library\\Core\\Core.csproj": {
+    "c:\\Users\\preda\\10library\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\preda\\10library\\Core\\Core.csproj",
+        "projectUniqueName": "c:\\Users\\preda\\10library\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\preda\\10library\\Core\\Core.csproj",
+        "projectPath": "c:\\Users\\preda\\10library\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\preda\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\preda\\10library\\Core\\obj\\",
+        "outputPath": "c:\\Users\\preda\\10library\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

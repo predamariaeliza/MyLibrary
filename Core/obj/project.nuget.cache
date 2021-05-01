@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lq8zb+5FQEei0lcLUhEHi1Nd4FvPs04QJfFo6YrwmQweQDa2Z4IIz+N22Cku+MyWPUO5TG4WcuSBfkEzN4W/Pw==",
+  "dgSpecHash": "kH3UH0g7gYx1BmnlCmx28ZAlwsZjrlm3L3nZVFLnSEkw+e6KRMOCyJ//9h/mkLpAHvJ6+Wm3xIbEStpShzdUEQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\preda\\10library\\Core\\Core.csproj",
+  "projectFilePath": "c:\\Users\\preda\\10library\\Core\\Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\preda\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\preda\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
