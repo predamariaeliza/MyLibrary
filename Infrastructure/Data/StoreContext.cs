@@ -1,6 +1,8 @@
 using System.Linq;
 using System.Reflection;
 using Core.Entities;
+
+// Pentru a putea folosi DbContext
 using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Data

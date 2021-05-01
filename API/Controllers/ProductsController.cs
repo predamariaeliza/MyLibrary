@@ -13,8 +13,10 @@ using API.Errors;
 using Microsoft.AspNetCore.Http;
 using API.Helpers;
 
+//ne arata in ce folder se afla proiectul nostru
 namespace API.Controllers
 {
+
     public class ProductsController : BaseApiController
     {
         private readonly IGenericRepository<Product> _productsRepo;
@@ -32,6 +34,7 @@ namespace API.Controllers
             _productsRepo = productsRepo;
         }
 
+        //endpoint: HTTP GET - extrage o resursa
         [HttpGet]
 
 
@@ -52,7 +55,9 @@ namespace API.Controllers
 
         */
 
+        //endpoint: HTTP GET - extrage tot
         [HttpGet("GetAll")]
+        
         // asynchronous request
         public async Task<ActionResult<Pagination<ProductToReturnDto>>> GetProducts(
             [FromQuery]ProductSpecParams productParams)
@@ -73,6 +78,7 @@ namespace API.Controllers
             productParams.PageSize, totalItems,data));
         }
 
+        //endpoint: HTTP GET - extrage id
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
@@ -87,12 +93,14 @@ namespace API.Controllers
             return _mapper.Map<Product, ProductToReturnDto>(product);
         }
 
+        //endpoint: HTTP GET - extrage brands
         [HttpGet("brands")]
         public async Task<ActionResult<IReadOnlyList<ProductBrand>>> GetProductBrands()
         {
             return Ok(await _productBrandRepo.ListAllAsync());
         }
 
+        //endpoint: HTTP GET - extrage types
         [HttpGet("types")]
         public async Task<ActionResult<IReadOnlyList<ProductType>>> GetProductTypes()
         {
